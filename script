@@ -1,0 +1,109 @@
+const task1a = () => {
+
+    const array = [1, 2, 3, 4, 5]
+  
+    const newArray = array.map((item) => {
+      return item * 2
+    })
+
+    console.log(`old array`, array)
+    console.log(`new array`, newArray)
+  }
+
+  const task1b = () => {
+
+    const nameArray = ['Ola', 'Kasia', 'Gabrysia']
+  
+    const newNameArray = nameArray.map((item) => {
+      return `Cześć ${item}`
+    })
+  
+    console.log(`old array`, nameArray)
+    console.log(`new array`, newNameArray)
+  }
+
+  const task2a = () => {
+
+    const array = [1,2,3,4,5,6,7,8,9]
+  
+    const newArray = array.filter((item) => {
+      return item % 2
+    })
+  
+    console.log(`old array`, array)
+    console.log(`new array`, newArray)
+  }
+
+  const task2b = () => {
+
+    const array = [1,2,3,4,5,6,7,8,9]
+  
+    const newArray = array.filter((item) => {
+      return item > 5
+    })
+  
+    console.log(`old array`, array)
+    console.log(`new array`, newArray)
+  }
+
+  const task2c = () => {
+
+    const array = [
+    {name: 'Alicja', lastname: 'Sztos', gender: 'female'},
+    {name: 'Grzegorz', lastname: 'Brzęczyszczykiewicz', gender: 'male'},
+    {name: 'Aleksadra', lastname: 'Pięka', gender: 'female'},
+    {name: 'Jan', lastname: 'Kowalski', gender: 'male'}]
+  
+    const femaleArray = array.filter(({name, lastname, gender}) => {
+      return gender === 'female'
+    })
+  
+    console.log(`old array`, array)
+    console.log(`new array`, femaleArray)
+  }
+
+  const task3a = () => {
+
+    const array = ['d', 'a', 's', 'f']
+  
+    const newArray = array.sort((a, b) => {
+      return a.localeCompare(b)
+    })
+  
+    console.log(`old array`, array) /// why localeCompare sorts the old const array ???
+    console.log(`new array`, newArray)
+  }
+
+  const task3b = () => {
+
+    const array = [9, 2, 1, 6, 5, 4, 7, 8, 3]
+  
+    const newArray = array.sort((a,b) => {
+      return a-b
+    })
+  
+    console.log(`old array`, array)
+    console.log(`new array`, newArray)
+  }
+
+  const task3c = () => {
+
+    const array = [9, 2, 1, 6, 5, 4, 7, 8, 3]
+  
+    const newArray = array.sort((a,b) => {
+      return b-a
+    })
+  
+    console.log(`old array`, array)
+    console.log(`new array`, newArray)
+  }
+
+  const task4a = () => {
+
+    const array = [9, 2, 1, 6, 5, 4, 7, 8, 3]
+  
+    const newArray = array.map((item) => { return item * 2}).filter((item) => {return item > 10}).sort((a, b) => { return a-b})
+  
+    console.log(`old array`, array)
+    console.log(`new array`, newArray)
+  }
